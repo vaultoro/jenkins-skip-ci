@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def get_skip_ci_options() {
   def skipCi = false
   def skipTest = false
@@ -23,5 +25,5 @@ def get_skip_ci_options() {
 
 def say_hello() {
     def name = "BERATBERATBERAT"
-    echo "${name}"
+    echo "BERATBERATBERAT"
 }
