@@ -23,5 +23,5 @@ def get_skip_ci_options() {
 
 def say_hello() {
     def name = "BERATBERATBERAT"
-    return name
+    echo "${skipCi}"
 }
