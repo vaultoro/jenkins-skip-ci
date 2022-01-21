@@ -23,7 +23,7 @@ def get_skip_ci_options() {
   return [skipCi, skipTest]
 }
 
-def say_hello() {
+def call() {
     def name = "BERATBERATBERAT"
     echo "BERATBERATBERAT"
 }
