@@ -6,7 +6,7 @@ def get_skip_ci_options() {
   echo "getting latest commit message"
 
   def latestCommitMessage = sh (
-  script: 'git log -1 --pretty=%B ${GIT_COMMIT}', returnStdout: true
+   script: 'git log -1 --pretty=%B ${GIT_COMMIT}', returnStdout: true
   ).trim()
 
   echo "Latest commit message is: ${latestCommitMessage}"
@@ -21,9 +21,4 @@ def get_skip_ci_options() {
   }
   echo "Skip test variable is ${skipTest}"
   return [skipCi, skipTest]
-}
-
-def call() {
-    def name = "BERATBERATBERAT"
-    echo "BERATBERATBERAT"
 }
